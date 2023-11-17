@@ -2,12 +2,12 @@ import pandas as pd
 import numpy as np
 
 
-df = pd.read_csv('routes.csv')
-df[' source airport id'] = pd.to_numeric(df[' source airport id'], errors = 'coerce').astype('Int64')
-print(df)
-n = df[' source airport id'].nunique()
-print(df[' source airport id'].min(), df[' source airport id'].max())
-print(n)
+# df = pd.read_csv('routes.csv')
+# df[' source airport id'] = pd.to_numeric(df[' source airport id'], errors = 'coerce').astype('Int64')
+# print(df)
+# n = df[' source airport id'].nunique()
+# print(df[' source airport id'].min(), df[' source airport id'].max())
+# print(n)
 
 
 # Intialize the graph First
@@ -58,11 +58,38 @@ class flight_graph:
 # Return Linked List:
     def linkedList(self):
         linked_list = []
-
         for row in range(0,len(self.graph)):
             for col in range(0,len(self.graph[row])):
-                linked_list += linked_list + [[row, col, self.graph[row,col]]]
-        return linked_list
+                linked_list += [[row, col, self.graph[row,col]]]
+        return np.array(linked_list)
+
+# Limit to a number of layovers produces a new graph
+# Save as a ne variable to retain original graph
+    def limitLayovers(self, startAirport, maxLayover = 1):
+        start_vert = self.vert_dict[startAirport]
+        edge_list = self.linkedList()
+        layoverGraph = flight_graph()
+        layoverGraph.vert_dict = self.vert_dict
+        layoverGraph.graph = np.zeros((len(self.vert_dict.keys()),len(self.vert_dict.keys())))
+        check_queue = [start_vert]
+        shell_count = 0
+        while shell_count <= maxLayover:   
+            queue_pulled = check_queue
+            # Clear Queue
+            check_queue =[] 
+            for vert in queue_pulled:
+                for edge in edge_list:
+                    if edge[0] == vert:
+                        layoverGraph.addEdge(edge[0], edge[1], edge[2])
+                        check_queue += [edge[1]]
+            shell_count += 1
+            # print(check_queue)
+            # print('-'*20)
+        return layoverGraph
+
+
+
+
 df = pd.DataFrame(np.array([[3,2,1],[2,3,2],[1,3,5]]), columns=['A', 'B', 'C'])
 
 print(df)
@@ -73,6 +100,11 @@ x = flight_graph()
 x.importGraphData(df, 'A', 'B', 'C')
 
 x.displayGraph()
+print("-------")
+x2 = x.limitLayovers(3,1)
+print("-------")
+print("2")
+x2.displayGraph()
 print("-------")
 # x.linkedList()
 # print(x.linkedList())
@@ -93,8 +125,12 @@ for _ in range(num_edges):
 
 # Creating the dataframe
 df = pd.DataFrame(edges, columns=['First Vertice', 'Second Vertice', 'Weight'])
-print(df)
+# print(df)
 
-y = flight_graph()
-y.importGraphData(df, "First Vertice", "Second Vertice" , "Weight")
-y.displayGraph()
+# y = flight_graph()
+# y.importGraphData(df, "First Vertice", "Second Vertice" , "Weight")
+# y.displayGraph()
+
+# z = y.limitLayovers("V1",0)
+# y.displayGraph()
+# z.displayGraph()
