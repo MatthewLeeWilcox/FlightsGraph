@@ -1,7 +1,10 @@
+# Scrapes passenger capacity data from Doc8643.com for all aircraft in dataset (approx 2600 types)
+# April Ainsworth
 
 from lxml import html
 import requests
 import re
+import pandas as pd
 
 aircraft_links = []
 aircraft_data = []
@@ -9,7 +12,7 @@ aircraft_data = []
 address_stub = "https://www.doc8643.com"
 
 page = requests.get("https://www.doc8643.com/aircrafts", headers={'User-Agent': 'Mozilla/5.0'})
-# print(page)
+print(page)
 
 tree = html.fromstring(page.content)
 links = tree.xpath('//a/@href')
@@ -55,9 +58,12 @@ for i in aircraft_links:
     pobs = aircraft_tree.xpath('//div/div/div')
     pob_values = [pob.text_content() for pob in pobs]
 
-    pob_values = pob_values[27:29]
+    pob_values = pob_values[28:29]
     code_values = code_values + pob_values
 
     aircraft_data.append(code_values)
+
+df = pd.DataFrame(aircraft_data, columns = ['ICAO_code', 'classification', 'pob_num']) 
+df.to_pickle("aircraft_data.pkl")
 
 print(aircraft_data)
