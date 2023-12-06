@@ -76,7 +76,6 @@ class flight_graph:
         adjac_list = []
         for row in self.graph:
             row_list = []
-            print(row)
             col_count = 0
             for col in row:
                 if col > 0:
@@ -186,17 +185,25 @@ class flight_graph:
 
 
 df = pd.DataFrame(np.array([[1,2,10],[1,3,5],[2,4,3],[3,4,1], [2,3,1]]), columns=['A', 'B', 'C'])
-
+df2 = pd.read_csv("routes_w_capacities.csv")
 # print(df)
-
+print(df2)
 
 x = flight_graph()
-
+x2 = flight_graph()
 x.importGraphData(df, 'A', 'B', 'C')
+
 x.displayGraph()
+print(x.find_max(1,4))
+
+print("- "*50)
+x2.importGraphData(df2, 'source_airport', 'destination_airport', 'capacity')
+
+x2.displayGraph
+print(x2.find_max("JFK", "SRQ", layover = True))
+
 # print(x.adjacency_list())
 # x.initialize_max(1)
-print(x.find_max(1,4))
 # x.displayGraph()
 # print("-------")
 # x2 = x.limitLayovers(3,1)
