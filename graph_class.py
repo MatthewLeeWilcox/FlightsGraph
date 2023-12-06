@@ -101,16 +101,19 @@ class flight_graph:
         adj_list = self.adjacency_list()
         first_shell = adj_list[startVert]
         for v_vert in first_shell:
-            vert_capacity[v_vert] = self.graph[startVert,v_vert]
+            vert_capacity[v_vert] += self.graph[startVert,v_vert]
             if layover == False:
                 max_people = vert_capacity[endVert]
-                return max_people
+                pass
             else:
                 if endVert in adj_list[v_vert]:
+
                     if vert_capacity[v_vert] >=  self.graph[v_vert,endVert]:
                         vert_capacity[endVert] += self.graph[v_vert,endVert]
                     else:
                         vert_capacity[endVert] += vert_capacity[v_vert]
+                     
+        
         max_people = vert_capacity[endVert]
         return max_people
 # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
@@ -173,77 +176,3 @@ class flight_graph:
     def manual_retrieve_dict(self):
         return self.vert_dict
 # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-
-#######################################################################################################################################
-# -------------------------------------------------------------------------------------------------------------------------------------
-
-# Testing the Class with small dataframes to see edge cases.
-
-# -------------------------------------------------------------------------------------------------------------------------------------
-
-
-
-
-df = pd.DataFrame(np.array([[1,2,10],[1,3,5],[2,4,3],[3,4,1], [2,3,1]]), columns=['A', 'B', 'C'])
-df2 = pd.read_csv("routes_w_capacities.csv")
-# print(df)
-print(df2)
-
-x = flight_graph()
-x2 = flight_graph()
-x.importGraphData(df, 'A', 'B', 'C')
-
-x.displayGraph()
-print(x.find_max(1,4))
-
-print("- "*50)
-x2.importGraphData(df2, 'source_airport', 'destination_airport', 'capacity')
-
-x2.displayGraph
-print(x2.find_max("JFK", "SRQ", layover = True))
-
-# print(x.adjacency_list())
-# x.initialize_max(1)
-# x.displayGraph()
-# print("-------")
-# x2 = x.limitLayovers(3,1)
-# print("-------")
-# print("2")
-# print(x.linkedList())
-# print("-------")
-# x2.displayGraph()
-# print("-------")
-# print(x2.manual_retrieve_dict())
-# # x.linkedList()
-# # print(x.linkedList())
-
-
-# num_vertices = 50
-# vertices = [f'V{i}' for i in range(1, num_vertices + 1)]
-# num_edges = 25  # Number of edges in the graph
-
-# # Creating random edges and their weights
-# np.random.seed(42)
-# edges = []
-# weights = np.random.randint(1, 20, size=num_edges)
-# for _ in range(num_edges):
-#     edge = np.random.choice(vertices, size=2, replace=False)
-#     edge_weight = np.random.choice(weights)
-#     edges.append([edge[0], edge[1], edge_weight])
-
-# # Creating the dataframe
-# df = pd.DataFrame(edges, columns=['First Vertice', 'Second Vertice', 'Weight'])
-# print(df)
-
-# y = flight_graph()
-# y.importGraphData(df, "First Vertice", "Second Vertice" , "Weight")
-# y.displayGraph()
-
-# z = y.limitLayovers("V50",0)
-# y.displayGraph()
-# z.displayGraph()
-# print(z.linkedList())
-
-
-
-# # New error, if you have 3 layovers, it just adds the throughpukt of the same location, I dont believe that is what we want. Wont Impact us on this project as we are only looking at max 1 layover but is something to consieder
