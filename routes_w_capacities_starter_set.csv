@@ -1,0 +1,163 @@
+airline,airline_ID,source_airport_name,source_airport,source_airport_ID,destination_airport_name,destination_airport,destination_airport_ID,short_plane_code,short_code,capacity
+3M,20710,Fort Lauderdale-Hollywood International Airport,FLL,3533,Orlando,MCO,3878,SF3,SF3,37
+3M,20710,Fort Lauderdale-Hollywood International Airport,FLL,3533,Tampa,TPA,3646,SF3,SF3,37
+3M,20710,Jacksonville,JAX,3712,Tampa,TPA,3646,SF3,SF3,37
+3M,20710,Orlando,MCO,3878,Fort Lauderdale-Hollywood International Airport,FLL,3533,SF3,SF3,37
+3M,20710,Orlando,MCO,3878,Pensacola,PNS,3564,SF3,SF3,37
+3M,20710,Orlando,MCO,3878,Fort Meyers,RSW,3793,SF3,SF3,37
+3M,20710,West Palm Beach,PBI,3722,Tampa,TPA,3646,SF3,SF3,37
+3M,20710,Pensacola,PNS,3564,Orlando,MCO,3878,SF3,SF3,37
+3M,20710,Pensacola,PNS,3564,Tampa,TPA,3646,SF3,SF3,37
+3M,20710,Fort Meyers,RSW,3793,Orlando,MCO,3878,SF3,SF3,37
+3M,20710,Tampa,TPA,3646,Fort Lauderdale-Hollywood International Airport,FLL,3533,SF3,SF3,37
+3M,20710,Tampa,TPA,3646,Jacksonville,JAX,3712,SF3,SF3,37
+3M,20710,Tampa,TPA,3646,West Palm Beach,PBI,3722,SF3,SF3,37
+3M,20710,Tampa,TPA,3646,Pensacola,PNS,3564,SF3,SF3,37
+4B,20565,Las Vegas McCarran International Airport,LAS,3877,Los Angeles International Airport,LAX,3484,PL2,PL2,10
+4B,20565,Los Angeles International Airport,LAX,3484,Las Vegas McCarran International Airport,LAS,3877,PL2,PL2,10
+9E,3976,Hartsfield-Jackson Atlanta International Airport,ATL,3682,Kalamazoo-Battle Creek International Airport,AZO,4039,CRJ,CRJ,70
+9E,3976,Hartsfield-Jackson Atlanta International Airport,ATL,3682,Chattanooga,CHA,3578,CRJ,CRJ,70
+9E,3976,Hartsfield-Jackson Atlanta International Airport,ATL,3682,Cedar Rapids,CID,4043,CRJ,CRJ,70
+9E,3976,Hartsfield-Jackson Atlanta International Airport,ATL,3682,Charleston,CRW,4285,CRJ,CRJ,70
+9E,3976,Hartsfield-Jackson Atlanta International Airport,ATL,3682,Cincinnati,CVG,3488,CR9 ,CR9,90
+9E,3976,Hartsfield-Jackson Atlanta International Airport,ATL,3682,Evansville,EVV,4018,CRJ,CRJ,70
+9E,3976,Hartsfield-Jackson Atlanta International Airport,ATL,3682,Fort Wayne,FWA,4041,CRJ,CRJ,70
+9E,3976,Hartsfield-Jackson Atlanta International Airport,ATL,3682,Greensboro,GSO,4008,CR9,CR9,90
+9E,3976,Hartsfield-Jackson Atlanta International Airport,ATL,3682,Greenville,GSP,4034,CRJ,CRJ,70
+9E,3976,Hartsfield-Jackson Atlanta International Airport,ATL,3682,Lansing,LAN,3544,CRJ,CRJ,70
+9E,3976,Hartsfield-Jackson Atlanta International Airport,ATL,3682,Lexington,LEX,4017,CRJ,CRJ,70
+9E,3976,Hartsfield-Jackson Atlanta International Airport,ATL,3682,Saginaw,MBS,4128,CRJ,CRJ,70
+9E,3976,Hartsfield-Jackson Atlanta International Airport,ATL,3682,Roanoke,ROA,4016,CRJ,CRJ,70
+9E,3976,Hartsfield-Jackson Atlanta International Airport,ATL,3682,Syracuse,SYR,3745,CR9,CR9,90
+9E,3976,Hartsfield-Jackson Atlanta International Airport,ATL,3682,Knoxville,TYS,3676,CRJ CR9,CR9,90
+9E,3976,Hartsfield-Jackson Atlanta International Airport,ATL,3682,Northwest Arkansas Regional Airport,XNA,4356,CRJ,CRJ,70
+9E,3976,Kalamazoo-Battle Creek International Airport,AZO,4039,Hartsfield-Jackson Atlanta International Airport,ATL,3682,CRJ,CRJ,70
+9E,3976,Chattanooga,CHA,3578,Hartsfield-Jackson Atlanta International Airport,ATL,3682,CRJ,CRJ,70
+9E,3976,Charleston,CRW,4285,Hartsfield-Jackson Atlanta International Airport,ATL,3682,CRJ,CRJ,70
+9E,3976,Cincinnati,CVG,3488,Hartsfield-Jackson Atlanta International Airport,ATL,3682,CR9 ,CR9,90
+9E,3976,Detroit Metropolitan Airport,DTW,3645,New Orleans International Airport,MSY,3861,CR9,CR9,90
+9E,3976,Evansville,EVV,4018,Hartsfield-Jackson Atlanta International Airport,ATL,3682,CRJ,CRJ,70
+9E,3976,Fort Wayne,FWA,4041,Hartsfield-Jackson Atlanta International Airport,ATL,3682,CRJ,CRJ,70
+9E,3976,Greensboro,GSO,4008,Hartsfield-Jackson Atlanta International Airport,ATL,3682,CR9,CR9,90
+9E,3976,Greenville,GSP,4034,Hartsfield-Jackson Atlanta International Airport,ATL,3682,CRJ,CRJ,70
+9E,3976,John F. Kennedy International Airport,JFK,3797,New Orleans International Airport,MSY,3861,CR9,CR9,90
+9E,3976,Lansing,LAN,3544,Hartsfield-Jackson Atlanta International Airport,ATL,3682,CRJ,CRJ,70
+9E,3976,Lexington,LEX,4017,Hartsfield-Jackson Atlanta International Airport,ATL,3682,CRJ,CRJ,70
+9E,3976,La Guardia Airport,LGA,3697,New Orleans International Airport,MSY,3861,CR9,CR9,90
+9E,3976,Saginaw,MBS,4128,Hartsfield-Jackson Atlanta International Airport,ATL,3682,CRJ,CRJ,70
+9E,3976,Harrisburg,MDT,3542,Hartsfield-Jackson Atlanta International Airport,ATL,3682,CRJ,CRJ,70
+9E,3976,Memphis,MEM,3473,New Orleans International Airport,MSY,3861,CRJ,CRJ,70
+9E,3976,Minneapolis/St. Paul International Airport,MSP,3858,New Orleans International Airport,MSY,3861,CR9,CR9,90
+9E,3976,New Orleans International Airport,MSY,3861,Detroit Metropolitan Airport,DTW,3645,CR9,CR9,90
+9E,3976,New Orleans International Airport,MSY,3861,La Guardia Airport,LGA,3697,CR9,CR9,90
+9E,3976,New Orleans International Airport,MSY,3861,Memphis,MEM,3473,CRJ,CRJ,70
+9E,3976,New Orleans International Airport,MSY,3861,Minneapolis/St. Paul International Airport,MSP,3858,CR9,CR9,90
+9E,3976,Roanoke,ROA,4016,Hartsfield-Jackson Atlanta International Airport,ATL,3682,CRJ,CRJ,70
+9E,3976,Syracuse,SYR,3745,Hartsfield-Jackson Atlanta International Airport,ATL,3682,CR9,CR9,90
+9E,3976,Knoxville,TYS,3676,Hartsfield-Jackson Atlanta International Airport,ATL,3682,CRJ CR9 ,CR9,90
+9E,3976,Northwest Arkansas Regional Airport,XNA,4356,Hartsfield-Jackson Atlanta International Airport,ATL,3682,CRJ,CRJ,70
+9K,1629,Nantucket,ACK,3517,Logan International Airport,BOS,3448,CNA,CNA,7
+9K,1629,Nantucket,ACK,3517,Hyannis,HYA,4278,CNA,CNA,7
+9K,1629,Albany International Airport,ALB,3864,Logan International Airport,BOS,3448,CNA,CNA,7
+9K,1629,Augusta,AUG,3701,Logan International Airport,BOS,3448,CNA,CNA,7
+9K,1629,Logan International Airport,BOS,3448,Nantucket,ACK,3517,CNA,CNA,7
+9K,1629,Logan International Airport,BOS,3448,Albany International Airport,ALB,3864,CNA,CNA,7
+9K,1629,Logan International Airport,BOS,3448,Augusta,AUG,3701,CNA,CNA,7
+9K,1629,Logan International Airport,BOS,3448,Hyannis,HYA,4278,CNA,CNA,7
+9K,1629,Logan International Airport,BOS,3448,Rutland,RUT,5767,CNA,CNA,7
+9K,1629,Hyannis,HYA,4278,Nantucket,ACK,3517,CNA,CNA,7
+9K,1629,Hyannis,HYA,4278,Logan International Airport,BOS,3448,CNA,CNA,7
+9K,1629,Rutland,RUT,5767,Logan International Airport,BOS,3448,CNA,CNA,7
+AA,24,Allentown,ABE,4355,Charlotte/Douglas International Airport,CLT,3876,CR9 CR7 CRJ,CRJ,70
+AA,24,Allentown,ABE,4355,Philadelphia,PHL,3752,DH3,DH3,50
+AA,24,Charlotte/Douglas International Airport,CLT,3876,Tampa,TPA,3646,320 321 319 737,737,189
+AA,24,Charlotte/Douglas International Airport,CLT,3876,Bristol,TRI,4116,DH8 DH3,DH3,50
+AA,24,Charlotte/Douglas International Airport,CLT,3876,Knoxville,TYS,3676,CR7,CR7,74
+AA,24,Charlotte/Douglas International Airport,CLT,3876,Northwest Arkansas Regional Airport,XNA,4356,CR7,CR7,74
+AA,24,Columbus,CMH,3759,Charlotte/Douglas International Airport,CLT,3876,CR9,CR9,90
+AA,24,Columbus,CMH,3759,Washington National Airport,DCA,3520,CRJ E75 E70,E70,78
+AA,24,Columbus,CMH,3759,Dallas/Fort Worth International Airport,DFW,3670,M83 M80,M80,142
+AA,24,Columbus,CMH,3759,John F. Kennedy International Airport,JFK,3797,CR7 ER4,ER4,50
+AA,24,Columbus,CMH,3759,Los Angeles International Airport,LAX,3484,738,738,189
+AA,24,Columbus,CMH,3759,La Guardia Airport,LGA,3697,CR7 ERD,ERD,37
+AA,24,Columbus,CMH,3759,Miami International Airport,MIA,3576,ER4,ER4,50
+AA,24,Columbus,CMH,3759,O’Hare International Airport,ORD,3830,ER4 CR7 ERD,ERD,37
+AA,24,Columbus,CMH,3759,Philadelphia,PHL,3752,E70 CRJ E75,E75,142
+AA,24,Columbus,CMH,3759,Phoenix Sky Harbor International Airport,PHX,3462,319 320,320,179
+AA,24,Colorado Springs,COS,3819,Dallas/Fort Worth International Airport,DFW,3670,M80 M83,M83,172
+AA,24,Corpus Christi,CRP,3744,Dallas/Fort Worth International Airport,DFW,3670,319,319,142
+AA,24,Cincinnati,CVG,3488,Charlotte/Douglas International Airport,CLT,3876,CRJ,CRJ,70
+AA,24,Cincinnati,CVG,3488,Washington National Airport,DCA,3520,CRJ,CRJ,70
+AA,24,Cincinnati,CVG,3488,Dallas/Fort Worth International Airport,DFW,3670,ER4 ERD,ERD,37
+AA,24,Cincinnati,CVG,3488,John F. Kennedy International Airport,JFK,3797,ER4,ER4,50
+AA,24,Cincinnati,CVG,3488,Miami International Airport,MIA,3576,ER4,ER4,50
+AA,24,Cincinnati,CVG,3488,O’Hare International Airport,ORD,3830,ER4,ER4,50
+AA,24,Cincinnati,CVG,3488,Philadelphia,PHL,3752,E70 CRJ E75,E75,142
+AA,24,Daytona Beach,DAB,3950,Charlotte/Douglas International Airport,CLT,3876,CR7,CR7,74
+AA,24,Dayton,DAY,3627,Charlotte/Douglas International Airport,CLT,3876,CRJ,CRJ,70
+AA,24,Dayton,DAY,3627,Washington National Airport,DCA,3520,CRJ,CRJ,70
+AA,24,Dayton,DAY,3627,Dallas/Fort Worth International Airport,DFW,3670,M83 319 M80,M80,142
+AA,24,Dayton,DAY,3627,La Guardia Airport,LGA,3697,ERD,ERD,37
+AA,24,Dayton,DAY,3627,O’Hare International Airport,ORD,3830,ER4,ER4,50
+AA,24,Dayton,DAY,3627,Philadelphia,PHL,3752,CRJ,CRJ,70
+AA,24,Washington National Airport,DCA,3520,Augusta,AGS,3658,CRJ,CRJ,70
+AA,24,Washington National Airport,DCA,3520,Albany International Airport,ALB,3864,E70 CRJ E75,E75,142
+AA,24,Washington National Airport,DCA,3520,Hartford,BDL,3825,CRJ E75 E70,E70,78
+AA,24,Washington National Airport,DCA,3520,Bangor,BGR,3463,CRJ E70,E70,78
+AA,24,Washington National Airport,DCA,3520,Birmingham International Airport,BHM,3811,CRJ,CRJ,70
+AA,24,Washington National Airport,DCA,3520,Nashville,BNA,3690,ERD CRJ E70,E70,78
+AA,24,Washington National Airport,DCA,3520,Logan International Airport,BOS,3448,319 E90,E90,108
+AA,24,Washington National Airport,DCA,3520,Burlington,BTV,3711,CRJ,CRJ,70
+AA,24,Washington National Airport,DCA,3520,Buffalo,BUF,3820,CRJ E75 E70,E70,78
+AA,24,Washington National Airport,DCA,3520,Columbia,CAE,3561,CRJ,CRJ,70
+AA,24,Washington National Airport,DCA,3520,Akron,CAK,4112,CRJ,CRJ,70
+AA,24,Washington National Airport,DCA,3520,Chattanooga,CHA,3578,CRJ,CRJ,70
+AA,24,Washington National Airport,DCA,3520,Charleston,CHS,3806,E70 CRJ E75,E75,142
+AA,24,Washington National Airport,DCA,3520,Charlotte/Douglas International Airport,CLT,3876,319 320,320,179
+AA,24,Washington National Airport,DCA,3520,Columbus,CMH,3759,CRJ E75 E70,E70,78
+AA,24,Washington National Airport,DCA,3520,Charleston,CRW,4285,DH3,DH3,50
+AA,24,Washington National Airport,DCA,3520,Cincinnati,CVG,3488,CRJ,CRJ,70
+AA,24,Washington National Airport,DCA,3520,Dayton,DAY,3627,CRJ,CRJ,70
+AA,24,Washington National Airport,DCA,3520,Dallas/Fort Worth International Airport,DFW,3670,738 M80,M80,142
+AA,24,Washington National Airport,DCA,3520,Des Moines,DSM,3729,E70 CRJ,CRJ,70
+AA,24,Washington National Airport,DCA,3520,Detroit Metropolitan Airport,DTW,3645,CRJ E70 E75,E75,142
+AA,24,Washington National Airport,DCA,3520,Fayetteville,FAY,5738,DH3,DH3,50
+AA,24,Washington National Airport,DCA,3520,Fort Lauderdale-Hollywood International Airport,FLL,3533,319,319,142
+AA,24,Washington National Airport,DCA,3520,Greensboro,GSO,4008,CRJ E70 E75,E75,142
+AA,24,Washington National Airport,DCA,3520,Greenville,GSP,4034,CRJ,CRJ,70
+AA,24,Washington National Airport,DCA,3520,Huntsville International Airport,HSV,4113,CRJ E70,E70,78
+AA,24,Washington National Airport,DCA,3520,Indianapolis International Airport,IND,3585,E70 E75 CRJ,CRJ,70
+AA,24,Washington National Airport,DCA,3520,Jackson,JAN,3580,CRJ,CRJ,70
+AA,24,Washington National Airport,DCA,3520,Jacksonville,JAX,3712,CRJ E75 E70,E70,78
+AA,24,Washington National Airport,DCA,3520,Las Vegas McCarran International Airport,LAS,3877,319,319,142
+AA,24,Washington National Airport,DCA,3520,Los Angeles International Airport,LAX,3484,738,738,189
+AA,24,Washington National Airport,DCA,3520,La Guardia Airport,LGA,3697,319 E90,E90,108
+AA,24,Washington National Airport,DCA,3520,Little Rock National Airport,LIT,3660,E70,E70,78
+AA,24,Washington National Airport,DCA,3520,Kansas City,MCI,3458,E70 E75,E75,142
+AA,24,Washington National Airport,DCA,3520,Orlando,MCO,3878,320 319,319,142
+AA,24,Washington National Airport,DCA,3520,Memphis,MEM,3473,CRJ,CRJ,70
+AA,24,Washington National Airport,DCA,3520,Manchester,MHT,4011,CRJ E75 E70,E70,78
+AA,24,Washington National Airport,DCA,3520,Miami International Airport,MIA,3576,738,738,189
+AA,24,Washington National Airport,DCA,3520,Minneapolis/St. Paul International Airport,MSP,3858,E70 E75,E75,142
+AA,24,Washington National Airport,DCA,3520,New Orleans International Airport,MSY,3861,E70 E75,E75,142
+AA,24,Washington National Airport,DCA,3520,Myrtle Beach,MYR,3515,CRJ,CRJ,70
+AA,24,Washington National Airport,DCA,3520,Omaha,OMA,3454,E70,E70,78
+AA,24,Washington National Airport,DCA,3520,O’Hare International Airport,ORD,3830,738 M83 M80,M80,142
+AA,24,Washington National Airport,DCA,3520,West Palm Beach,PBI,3722,E75 E70,E70,78
+AA,24,Washington National Airport,DCA,3520,Portland International Airport,PDX,3720,737,737,189
+AA,24,Washington National Airport,DCA,3520,Philadelphia,PHL,3752,319 320 DH3,DH3,50
+AA,24,Washington National Airport,DCA,3520,Phoenix Sky Harbor International Airport,PHX,3462,320 757,757,142
+AA,24,Washington National Airport,DCA,3520,Pittsburgh,PIT,3570,CRJ E75,E75,142
+AA,24,Washington National Airport,DCA,3520,Pensacola,PNS,3564,CRJ,CRJ,70
+AA,24,Washington National Airport,DCA,3520,Providence - T.F. Greenland Airport,PVD,3641,CRJ E75 E70,E70,78
+AA,24,Washington National Airport,DCA,3520,Portland,PWM,3862,E75 CRJ E70,E70,78
+AA,24,Washington National Airport,DCA,3520,Raleigh,RDU,3626,ERD CRJ,CRJ,70
+AA,24,Washington National Airport,DCA,3520,Fort Meyers,RSW,3793,E75 E70,E70,78
+AA,24,Washington National Airport,DCA,3520,San Diego,SAN,3731,319,319,142
+AA,24,Washington National Airport,DCA,3520,Savannah,SAV,3613,CRJ,CRJ,70
+AA,24,Washington National Airport,DCA,3520,Louisville,SDF,4014,CRJ E75,E75,142
+AA,24,Washington National Airport,DCA,3520,Sarasota,SRQ,4067,CRJ,CRJ,70
+AA,24,Washington National Airport,DCA,3520,Lambert International Airport,STL,3678,CR7,CR7,74
+AA,24,Washington National Airport,DCA,3520,Syracuse,SYR,3745,E70 CRJ E75,E75,142
+AA,24,Washington National Airport,DCA,3520,Tampa,TPA,3646,319,319,142
+AA,24,Washington National Airport,DCA,3520,Knoxville,TYS,3676,CRJ,CRJ,70
