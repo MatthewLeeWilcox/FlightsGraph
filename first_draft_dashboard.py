@@ -8,13 +8,33 @@ airport_data = pd.read_csv('c:/Users/rocky/iCloudDrive/Desktop/NCF Fall 2023/Alg
 
 root = Tk()
 root.title('Flights') #title of window
-root.iconbitmap('C:/Users/rocky/iCloudDrive/Desktop/NCF Fall 2023/Algorithms/Group projects/Group project 2/Final Stuff/Plane.ico') #cute icon
+#root.iconbitmap('C:/Users/rocky/iCloudDrive/Desktop/NCF Fall 2023/Algorithms/Group projects/Group project 2/Final Stuff/Plane.ico') #cute icon
 root.geometry('900x600') #size of window
 
 #create lists with unique departing airports and destination airports
 departing_airports = airport_data['source_airport_name'].unique()
 destination_airports = airport_data['destination_airport_name'].unique()
 
+
+#this function will be used with the button. 
+def show_airport_ids():
+    #get departing airport info
+    departing = selected_departing_airport.get()
+    dep_filter = airport_data['source_airport_name']  == departing
+    dep = airport_data[dep_filter]
+    dep_id = dep['source_airport_ID'].unique()
+    dep_label = Label(root, text = 'departing airport id; ' + str(dep_id))
+
+    #get destination airport info
+    destination = selected_destination_airport.get()
+    dest_filter = airport_data['destination_airport_name']==destination
+    dest = airport_data[dest_filter]
+    dest_id = dest['destination_airport_ID'].unique()
+    dest_label = Label(root, text = 'destination airport id; ' + str(dest_id))
+
+    #put labels on screen
+    dep_label.grid(row = 3, column = 0)
+    dest_label.grid(row = 4, column = 0)
 
 
 
@@ -32,6 +52,11 @@ dropdownboxDeparting.grid(row = 1, column = 0)
 
 dropdownboxDestination = OptionMenu(root, selected_destination_airport,*destination_airports) #must have the star to show the outside variable
 dropdownboxDestination.grid(row = 1, column = 1)
+
+#define enter button
+enter_button = Button(root, text = 'click to enter selection', command = show_airport_ids )
+enter_button.grid(row = 2, column = 0)
+
 
 
 root.mainloop()
