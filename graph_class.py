@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+import csv
 
 # -------------------------------------------------------------------------------------------------------------------------------------
 
@@ -62,15 +63,6 @@ class flight_graph:
     def adjacencyMatrix(self):
         return self.graph
 
-# Return Linked List:
-    def linkedList(self):
-        linked_list = []
-        for row in range(0,len(self.graph)):
-            for col in range(0,len(self.graph[row])):
-                if self.graph[row,col] >0:
-                    linked_list += [[row, col, self.graph[row,col]]]
-        return np.array(linked_list)
-
 # Adjaceny List
     def adjacency_list(self):
         adjac_list = []
@@ -117,6 +109,14 @@ class flight_graph:
         max_people = vert_capacity[endVert]
         return max_people
 # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+df_routes = pd.read_csv("routes_w_capacities.csv")
+
+x = flight_graph()
+
+x.importGraphData(df_routes, 'source_airport_ID', 'destination_airport_ID', 'capacity')
+# x.importGraphData(df, 'A', 'B', 'C')
+x.displayGraph()
+print(x.find_max(3533,3878))
 
 # ////////////////////////////////////////////////////////
 
@@ -162,7 +162,15 @@ class flight_graph:
             # print('-'*20)
         return layoverGraph
 # \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
-  
+
+# Return Linked List:
+    def linkedList(self):
+        linked_list = []
+        for row in range(0,len(self.graph)):
+            for col in range(0,len(self.graph[row])):
+                if self.graph[row,col] >0:
+                    linked_list += [[row, col, self.graph[row,col]]]
+        return np.array(linked_list)
     
 # /////////////////////////////////////////////////
 # Manual Imports
