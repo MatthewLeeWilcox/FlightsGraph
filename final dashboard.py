@@ -16,7 +16,7 @@ root.geometry('900x600') #size of window
 # -------------------------------------------------------------------------------------------------------------------------------------
 
 # Note: the graph must me intialized such as x = flight_graph()
-df_routes = pd.read_csv('c:/Users/rocky/iCloudDrive/Desktop/NCF Fall 2023/Algorithms/Group projects/Group project 2/Data/routes_w_capacities_airlines_starter.csv')
+df_routes = pd.read_csv('c:/Users/rocky/iCloudDrive/Desktop/NCF Fall 2023/Algorithms/Group projects/Group project 2/Data/FINAL_ALL_DATA_DEC_11.csv')
 
 
 class flight_graph:
